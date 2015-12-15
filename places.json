@@ -1,0 +1,5 @@
+ogr2ogr \
+  -f GeoJSON \
+  -where "ISO_A2 = 'GB' AND SCALERANK < 8" \
+  places.json \
+  ne_10m_populated_places.shp
