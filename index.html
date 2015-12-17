@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>D3 Test</title>
-        <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    </head>
-    <body>
-<div class="someclass">
-    <h2>Create A Bar Chart With D3 JavaScript</h2>
-    <div id="bar-chart">
- 
-    </div>
-</div>   
-        <script type="text/javascript">
-        d3.json("MOCK_DATA.json", function(json) {
-    console.log(json);  //Log output to console
+<head>
+<meta charset="utf-8">
+<title>D3 Graph Visualization Demo</title>
+
+<!-- JavaScript Libraries //-->
+<script src="http://d3js.org/d3.v3.min.js"  charset="utf-8"></script>
+
+<script src="js/d3pie.min.js"></script>
+
+<!-- CSS Style //-->
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900|Source+Code+Pro:300" rel="stylesheet" type="text/css">
+<!-- <link href="style.css" rel="stylesheet" type="text/css"> -->
+<body>
+<div id="pieChart"></div>
+<script>
+
+var pie = new d3pie("pieChart", {
+//data
+
 });
-    </script>
-    </body>
+
+
+
+
+</script>
+</body>
 </html>
